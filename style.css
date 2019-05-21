@@ -6,7 +6,7 @@
 }
 
 body{
-	margin-top: 160px;
+
 }
 
 header{
@@ -30,21 +30,27 @@ nav {
 	margin-right: 40px;
 }
 
-nav ul {
-	display: flex;
-	flex-direction: row;
+#MenuButton{
+  display: none;
 }
 
-nav ul li{
-	margin-right: 24px;
+#MenuList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-nav a{
+#MenuList li{
+	margin: 0 1rem;
+}
+
+#MenuList a{
 	color: white;
 }
 
 #wrapper {
 	margin: auto;
+  margin-top: 160px;
 	max-width: 960px;
 	display: flex;
 	flex-direction: column;
