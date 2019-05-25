@@ -1,30 +1,43 @@
-// Smooth Scrool Sample
 
-$(function(){
 
-  $("#MenuButton a").click( function(){
-    $("#MenuList").slideToggle();
+$(function() {
+
+  // Menu Toggle
+  $('#MenuButton').on('click', function () {
+    $(this).toggleClass('open');
+    $('#MenuList').slideToggle();
   });
+
+  $('#MenuList a').on('click', function () {
+    if( $(window).width() <= 768){
+      $('#MenuButton').removeClass('open');
+      $('#MenuList').slideToggle();
+    }
+  });
+
 
   $(window).resize(function(){
 
-    if( $(window).width() > 640){
-      $("#MenuButton").hide();
-      $("#MenuList").show();
-      $("#MenuList").css({'flex-direcrion':'row'});
+    if( $(window).width() > 768){
+      $('#MenuButton').hide();
+      $('#MenuList').show();
+      $('#MenuList').css({'flex-direcrion':'row'});
     } else {
-      $("#MenuButton").show();
-      $("#MenuList").hide();
+      $('#MenuButton').show();
+      $('#MenuButton').removeClass('open');
+      $('#MenuList').hide();
     }
 
-  });
+});
 
+
+// Smooth Scrool
 
   $('a[href^="#"]').click(function() {
 
     // 初期設定：移動時間(ms)と頭出し位置
     var speed = 500;
-    var offset = -160;
+    var offset = -96;
 
     // アンカーを取得
     var anchor = $(this).attr("href");
