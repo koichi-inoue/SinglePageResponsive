@@ -1,8 +1,7 @@
-
-
 $(function() {
 
   // Menu Toggle
+
   $('#MenuButton').on('click', function () {
     $(this).toggleClass('open');
     $('#MenuList').slideToggle();
@@ -15,6 +14,7 @@ $(function() {
     }
   });
 
+  // Window Resize Function
 
   $(window).resize(function(){
 
@@ -28,10 +28,10 @@ $(function() {
       $('#MenuList').hide();
     }
 
-});
+  });
 
 
-// Smooth Scrool
+  // Smooth Scrool
 
   $('a[href^="#"]').click(function() {
 
