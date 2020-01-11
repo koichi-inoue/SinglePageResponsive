@@ -78,7 +78,7 @@ header h1{
 
     #MenuButton.open .MenuButtonLine:nth-child(1) {
       top: 10px;
-      transform: rotate(45deg);
+      transform: rotate(135deg);
     }
 
     #MenuButton.open .MenuButtonLine:nth-child(2) {
@@ -88,7 +88,7 @@ header h1{
 
     #MenuButton.open .MenuButtonLine:nth-child(3) {
       top: -10px;
-      transform: rotate(-45deg);
+      transform: rotate(-135deg);
     }
 
   #MenuList {  /* Default Display None */
