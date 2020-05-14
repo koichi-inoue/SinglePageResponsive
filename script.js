@@ -18,7 +18,7 @@ $(function() {
 
   $(window).resize(function(){
 
-    if( $(window).width() > 768){
+    if( $(window).innerwidth() > 768){
       $('#MenuButton').hide();
       $('#MenuList').show();
       $('#MenuList').css({'flex-direcrion':'row'});
