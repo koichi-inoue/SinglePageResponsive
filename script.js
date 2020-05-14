@@ -18,14 +18,18 @@ $(function() {
 
   $(window).resize(function(){
 
-    if( $(window).innerwidth() > 768){
+    if( $(window).innerWidth() > 768){
+      
       $('#MenuButton').hide();
       $('#MenuList').show();
       $('#MenuList').css({'flex-direcrion':'row'});
+      
     } else {
+      
       $('#MenuButton').show();
       $('#MenuButton').removeClass('open');
       $('#MenuList').hide();
+      
     }
 
   });
