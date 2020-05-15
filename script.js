@@ -18,18 +18,17 @@ $(function() {
 
   $(window).resize(function(){
 
-    if( $(window).innerWidth() > 768){
-      
-      $('#MenuButton').hide();
-      $('#MenuList').show();
-      $('#MenuList').css({'flex-direcrion':'row'});
-      
-    } else {
-      
+    if( window.innerWidth <= 768){
+
+      $('#MenuList').hide();
       $('#MenuButton').show();
       $('#MenuButton').removeClass('open');
-      $('#MenuList').hide();
-      
+
+    } else {
+
+      $('#MenuButton').hide();
+      $('#MenuList').show();
+
     }
 
   });
