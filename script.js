@@ -8,7 +8,7 @@ $(function() {
   });
 
   $('#MenuList a').on('click', function () {
-    if( $(window).width() <= 768){
+    if( window.innerWidth <= 768){
       $('#MenuButton').removeClass('open');
       $('#MenuList').slideToggle();
     }
